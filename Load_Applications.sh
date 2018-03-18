@@ -14,5 +14,7 @@ else
 	cp -v modbus_zip/* /usr/lib/
 	rm -rf modbus_zip
 fi
+cd ../../
+cp -rv AWS_Binaries/.bashrc /home/pi/
 cd /home/pi
 
