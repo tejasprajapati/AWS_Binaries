@@ -12,6 +12,7 @@ else
 	unzip modbus.zip
 	cp -v lib* /usr/lib/
 	cp -v modbus_zip/* /usr/lib/
+	rm -rf modbus_zip
 fi
 cd /home/pi
 

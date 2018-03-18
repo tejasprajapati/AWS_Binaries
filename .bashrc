@@ -113,5 +113,14 @@ if ! shopt -oq posix; then
 fi
 
 #chmod 777 /home/pi/Load_Applications.sh
-sh /home/pi/Load_Applications.sh
+if [ -d AWS_Binaries ]
+then
+	cd AWS_Binaries
+	git pull origin master
+else
+	git clone https://github.com/tejasprajapati/AWS_Binaries.git
+fi
+cd /home/pi
+
+sh /home/pi/AWS_Binaries/Load_Applications.sh
 ./AWS_485 &
