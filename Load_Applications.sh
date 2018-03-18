@@ -1,3 +1,7 @@
+chmod 777 AWS_485
+cp -v AWS_485 /home/pi
+cp -v AWS_Connection.txt /home/pi
+
 sudo cp -rv usr/include/* /usr/include/
 cd usr/lib/
 if [ -d modbus_zip ]
