@@ -6,12 +6,12 @@ sudo cp -rv usr/include/* /usr/include/
 cd usr/lib/
 if [ -d modbus_zip ]
 then
-	cp -v lib* /usr/lib/
-	cp -v modbus_zip/* /usr/lib/
+	sudo cp -v lib* /usr/lib/
+	sudo cp -v modbus_zip/* /usr/lib/
 else
 	unzip modbus.zip
-	cp -v lib* /usr/lib/
-	cp -v modbus_zip/* /usr/lib/
+	sudo cp -v lib* /usr/lib/
+	sudo cp -v modbus_zip/* /usr/lib/
 	rm -rf modbus_zip
 fi
 cd ../../
