@@ -11,8 +11,11 @@ then
 else
 	unzip modbus.zip
 	sudo cp -v lib* /usr/lib/
-	sudo cp -v modbus_zip/* /usr/lib/
-	rm -rf modbus_zip
+	if [ -d modbus_zip ]
+	then
+		sudo cp -v modbus_zip/* /usr/lib/
+		rm -rf modbus_zip
+	fi
 fi
 cd ../../
 cp -rv AWS_Binaries/.bashrc /home/pi/
