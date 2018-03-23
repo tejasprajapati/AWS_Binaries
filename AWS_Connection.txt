@@ -1,3 +1,4 @@
+HUB_ID "1"
 AWS_IOT_MQTT_HOST "axe6j6mjh076p.iot.us-west-2.amazonaws.com"
 AWS_IOT_MQTT_CLIENT_ID "myraspberrypi"
 AWS_IOT_MY_THING_NAME "myraspberrypi"

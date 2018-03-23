@@ -1,3 +1,12 @@
+if [ -d AWS_Binaries ]
+then
+	cd AWS_Binaries
+	git pull origin master
+else
+	git clone https://github.com/tejasprajapati/AWS_Binaries.git
+	cd AWS_Binaries
+fi
+
 chmod 777 AWS_485
 cp -v AWS_485 /home/pi
 cp -v AWS_Connection.txt /home/pi
@@ -9,7 +18,7 @@ then
 	sudo cp -v lib* /usr/lib/
 	sudo cp -v modbus_zip/* /usr/lib/
 else
-	unzip modbus.zip
+	unzip -u modbus.zip
 	sudo cp -v lib* /usr/lib/
 	if [ -d modbus_zip ]
 	then
@@ -17,7 +26,5 @@ else
 		rm -rf modbus_zip
 	fi
 fi
-cd ../../
-cp -rv AWS_Binaries/.bashrc /home/pi/
 cd /home/pi
 
