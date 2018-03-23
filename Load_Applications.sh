@@ -26,5 +26,7 @@ else
 		rm -rf modbus_zip
 	fi
 fi
+cd ../../
+sudo cp -v rc.local /etc/rc.local
 cd /home/pi
 
