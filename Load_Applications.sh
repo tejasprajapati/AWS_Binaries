@@ -28,5 +28,6 @@ else
 fi
 cd ../../
 sudo cp -v rc.local /etc/rc.local
+sudo cp Load_Applications.sh /home/pi
 cd /home/pi
 
